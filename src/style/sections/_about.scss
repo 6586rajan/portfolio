@@ -22,14 +22,14 @@
     @include respond(phone) {
       padding-bottom: 5rem;
     }
-
+// 
     #slider {
       position: relative;
       width: 500px;
-      height: 265px;
-     
+      height: 750px;
       overflow: hidden;
-      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+      object-fit: contain;
+      // box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
     }
     #slider ul {
       position: relative;
@@ -44,12 +44,13 @@
     #slider ul li {
       position: relative;
       height: 100%;
-     
-      float: left;
+      // display: inline-block;
+      float: inline-start;
     }
     #slider ul li img{
-      width: 500px;
-      height: 265px;
+      max-width: 100%;
+      max-height: 100%;
+      // width: 500px;
     }
      
     #slider #prev, #slider #next {
@@ -76,7 +77,8 @@
     #slider #next {
       right: 10px;
     }
-    
+    // 
+
     &__image {
       display: flex;
       height: 100%;
